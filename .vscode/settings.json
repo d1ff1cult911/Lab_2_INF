@@ -1,0 +1,15 @@
+{
+    "makefile.makefilePath": "D:\\LABA_2\\lab2\\MakeFile",
+    "files.associations": {
+        "iostream": "cpp"
+    },
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "d:\\LABA_2\\lab2",
+            "binaryPath": "d:\\LABA_2\\lab2\\lab2",
+            "binaryArgs": []
+        }
+    ],
+    "C_Cpp.errorSquiggles": "enabled",
+    "problems.showCurrentInStatus": true
+}
