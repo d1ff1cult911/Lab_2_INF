@@ -53,7 +53,6 @@ void TestArraySequence() {
         // Mutable operations
         std::cout << "Test 1: " << (seq.Get(1) == 7 ? "PASSED" : "FAILED") << "\n";
         std::cout << "Test 2: " << (seq.GetLength() == 3 ? "PASSED" : "FAILED") << "\n";
-        std::cout<<12;
         // Immutable operations
         auto newSeq = seq.Append(20);
         std::cout << "Test 3: " << (newSeq->GetLength() == 4 ? "PASSED" : "FAILED") << "\n";
