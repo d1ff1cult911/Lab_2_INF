@@ -35,7 +35,6 @@ public:
         }
     }
 
-    // Исправленный конструктор копирования
     LinkedList(const LinkedList& other) {
         if (!other.head) {
             head.reset();
