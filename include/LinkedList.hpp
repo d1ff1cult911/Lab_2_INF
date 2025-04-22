@@ -159,23 +159,4 @@ public:
         prev->next = std::move(prev->next->next);
         size--;
     }
-
-    // Итераторы
-    class Iterator {
-        Node* current;
-    public:
-        Iterator(Node* node) : current(node) {}
-
-        T& operator*() { return current->data; }
-        Iterator& operator++() { 
-            current = current->next.get();
-            return *this;
-        }
-        bool operator!=(const Iterator& other) { 
-            return current != other.current;
-        }
-    };
-
-    Iterator begin() { return Iterator(head.get()); }
-    Iterator end() { return Iterator(nullptr); }
 };
