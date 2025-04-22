@@ -55,7 +55,6 @@ public:
         }
     }
 
-    // Оператор присваивания
     LinkedList& operator=(const LinkedList& other) {
         if (this != &other) {
             LinkedList temp(other);
@@ -80,7 +79,6 @@ public:
         return result;
     }
 
-    // Остальные методы остаются без изменений
     void Prepend(T item) {
         auto newNode = std::make_unique<Node>(item);
         newNode->next = std::move(head);
